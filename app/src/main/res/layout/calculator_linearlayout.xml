@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/kq"
+        android:background="#E0E0E0"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:textColor="@color/black"
+        android:gravity="center_vertical|right"
+        android:paddingEnd="6dp"
+        android:textSize="100sp"
+        android:text="0" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="6dp"
+        android:paddingTop="6dp"
+        android:layout_weight=".8">
+
+        <Button
+            android:text="CE"
+            android:textSize="25sp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@drawable/cal_button_1"/>
+
+        <Button
+            android:text="C"
+            android:textSize="25sp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginStart="6dp"
+            android:background="@drawable/cal_button_1"/>
+
+        <Button
+            android:text="BS"
+            android:textSize="25sp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginStart="6dp"
+            android:background="@drawable/cal_button_1"/>
+
+        <Button
+            android:text="/"
+            android:textSize="25sp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginStart="6dp"
+            android:background="@drawable/cal_button_1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="6dp"
+        android:paddingTop="6dp"
+        android:layout_weight="1">
+
+        <Button
+            android:text="7"
+            android:textSize="25sp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@drawable/cal_button_2"/>
+
+        <Button
+            android:text="8"
+            android:textSize="25sp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginStart="6dp"
+            android:background="@drawable/cal_button_2"/>
+
+        <Button
+            android:text="9"
+            android:textSize="25sp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginStart="6dp"
+            android:background="@drawable/cal_button_2"/>
+
+        <Button
+            android:text="x"
+            android:textSize="20sp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginStart="6dp"
+            android:background="@drawable/cal_button_1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="6dp"
+        android:paddingTop="6dp"
+        android:layout_weight="1">
+
+        <Button
+            android:text="4"
+            android:textSize="25sp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@drawable/cal_button_2"/>
+
+        <Button
+            android:text="5"
+            android:textSize="25sp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginStart="6dp"
+            android:background="@drawable/cal_button_2"/>
+
+        <Button
+            android:text="6"
+            android:textSize="25sp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginStart="6dp"
+            android:background="@drawable/cal_button_2"/>
+
+        <Button
+            android:text="-"
+            android:textSize="25sp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginStart="6dp"
+            android:background="@drawable/cal_button_1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="6dp"
+        android:paddingTop="6dp"
+        android:layout_weight="1">
+
+        <Button
+            android:text="1"
+            android:textSize="25sp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@drawable/cal_button_2"/>
+
+        <Button
+            android:text="2"
+            android:textSize="25sp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginStart="6dp"
+            android:background="@drawable/cal_button_2"/>
+
+        <Button
+            android:text="3"
+            android:textSize="25sp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginStart="6dp"
+            android:background="@drawable/cal_button_2"/>
+
+        <Button
+            android:text="+"
+            android:textSize="25sp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginStart="6dp"
+            android:background="@drawable/cal_button_1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="6dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:layout_weight="1">
+
+        <Button
+            android:text="+/-"
+            android:textSize="25sp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@drawable/cal_button_1"/>
+
+        <Button
+            android:text="0"
+            android:textSize="25sp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginStart="6dp"
+            android:background="@drawable/cal_button_2"/>
+
+        <Button
+            android:text="."
+            android:textSize="25sp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginStart="6dp"
+            android:background="@drawable/cal_button_1"/>
+
+        <Button
+            android:text="="
+            android:textSize="25sp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginStart="6dp"
+            android:background="@drawable/cal_button_1"/>
+    </LinearLayout>
+
+
+</LinearLayout>
