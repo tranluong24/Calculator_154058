@@ -100,7 +100,9 @@ class MainActivity : AppCompatActivity() {
         num0.setOnClickListener {
             if(board.text.isEmpty()){
                 board.text = board.text.toString() + "0"
-            }else if(board.text.toString().substringAfter('=').substring(1) == result.toString()){
+            }else if(board.text.toString() == "Khong the chia cho 0"){
+                board.text = "0"
+            } else if(board.text.toString().substringAfter('=').substring(1) == result.toString()){
                 board.text = "0"
             }else{
                 board.text = board.text.toString() + "0"
@@ -110,7 +112,9 @@ class MainActivity : AppCompatActivity() {
         num1.setOnClickListener {
             if(board.text.isEmpty()){
                 board.text = board.text.toString() + "1"
-            }else if(board.text.toString().substringAfter('=').substring(1) == result.toString()){
+            }else if(board.text.toString() == "Khong the chia cho 0"){
+                board.text = "1"
+            } else if(board.text.toString().substringAfter('=').substring(1) == result.toString()){
                 board.text = "1"
             }else{
                 board.text = board.text.toString() + "1"
@@ -120,7 +124,9 @@ class MainActivity : AppCompatActivity() {
         num2.setOnClickListener {
             if(board.text.isEmpty()){
                 board.text = board.text.toString() + "2"
-            }else if(board.text.toString().substringAfter('=').substring(1) == result.toString()){
+            }else if(board.text.toString() == "Khong the chia cho 0"){
+                board.text = "2"
+            } else if(board.text.toString().substringAfter('=').substring(1) == result.toString()){
                 board.text = "2"
             }else{
                 board.text = board.text.toString() + "2"
@@ -130,7 +136,9 @@ class MainActivity : AppCompatActivity() {
         num3.setOnClickListener {
             if(board.text.isEmpty()){
                 board.text = board.text.toString() + "3"
-            }else if(board.text.toString().substringAfter('=').substring(1) == result.toString()){
+            }else if(board.text.toString() == "Khong the chia cho 0"){
+                board.text = "3"
+            } else if(board.text.toString().substringAfter('=').substring(1) == result.toString()){
                 board.text = "3"
             }else{
                 board.text = board.text.toString() + "3"
@@ -140,7 +148,9 @@ class MainActivity : AppCompatActivity() {
         num4.setOnClickListener {
             if(board.text.isEmpty()){
                 board.text = board.text.toString() + "4"
-            }else if(board.text.toString().substringAfter('=').substring(1) == result.toString()){
+            }else if(board.text.toString() == "Khong the chia cho 0"){
+                board.text = "4"
+            } else if(board.text.toString().substringAfter('=').substring(1) == result.toString()){
                 board.text = "4"
             }else{
                 board.text = board.text.toString() + "4"
@@ -150,7 +160,9 @@ class MainActivity : AppCompatActivity() {
         num5.setOnClickListener {
             if(board.text.isEmpty()){
                 board.text = board.text.toString() + "5"
-            }else if(board.text.toString().substringAfter('=').substring(1) == result.toString()){
+            }else if(board.text.toString() == "Khong the chia cho 0"){
+                board.text = "5"
+            } else if(board.text.toString().substringAfter('=').substring(1) == result.toString()){
                 board.text = "5"
             }else{
                 board.text = board.text.toString() + "5"
@@ -160,7 +172,9 @@ class MainActivity : AppCompatActivity() {
         num6.setOnClickListener {
             if(board.text.isEmpty()){
                 board.text = board.text.toString() + "6"
-            }else if(board.text.toString().substringAfter('=').substring(1) == result.toString()){
+            }else if(board.text.toString() == "Khong the chia cho 0"){
+                board.text = "6"
+            } else if(board.text.toString().substringAfter('=').substring(1) == result.toString()){
                 board.text = "6"
             }else{
                 board.text = board.text.toString() + "6"
@@ -170,7 +184,9 @@ class MainActivity : AppCompatActivity() {
         num7.setOnClickListener {
             if(board.text.isEmpty()){
                 board.text = board.text.toString() + "7"
-            }else if(board.text.toString().substringAfter('=').substring(1) == result.toString()){
+            }else if(board.text.toString() == "Khong the chia cho 0"){
+                board.text = "7"
+            } else if(board.text.toString().substringAfter('=').substring(1) == result.toString()){
                 board.text = "7"
             }else{
                 board.text = board.text.toString() + "7"
@@ -180,7 +196,9 @@ class MainActivity : AppCompatActivity() {
         num8.setOnClickListener {
             if(board.text.isEmpty()){
                 board.text = board.text.toString() + "8"
-            }else if(board.text.toString().substringAfter('=').substring(1) == result.toString()){
+            }else if(board.text.toString() == "Khong the chia cho 0"){
+                board.text = "8"
+            } else if(board.text.toString().substringAfter('=').substring(1) == result.toString()){
                 board.text = "8"
             }else{
                 board.text = board.text.toString() + "8"
@@ -190,7 +208,9 @@ class MainActivity : AppCompatActivity() {
         num9.setOnClickListener {
             if(board.text.isEmpty()){
                 board.text = board.text.toString() + "9"
-            }else if(board.text.toString().substringAfter('=').substring(1) == result.toString()){
+            }else if(board.text.toString() == "Khong the chia cho 0"){
+                board.text = "9"
+            } else if(board.text.toString().substringAfter('=').substring(1) == result.toString()){
                 board.text = "9"
             }else{
                 board.text = board.text.toString() + "9"
@@ -198,7 +218,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         numAdd.setOnClickListener {
-            if(board.text.isEmpty()){
+            if(board.text.isEmpty() || board.text.toString() == "Khong the chia cho 0"){
                 board.text = board.text.toString() + "0+"
             }else if(board.text.toString().substringAfter('=').substring(1) == result.toString()){
                 board.text = result.toString() + "+"
@@ -208,7 +228,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         numSub.setOnClickListener {
-            if(board.text.isEmpty()){
+            if(board.text.isEmpty() || board.text.toString() == "Khong the chia cho 0"){
                 board.text = board.text.toString() + "0-"
             }else if(board.text.toString().substringAfter('=').substring(1) == result.toString()){
                 board.text = result.toString() + "-"
@@ -218,7 +238,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         numNhan.setOnClickListener {
-            if(board.text.isEmpty()){
+            if(board.text.isEmpty() || board.text.toString() == "Khong the chia cho 0"){
                 board.text = board.text.toString() + "0x"
             }else if (board.text.contains('=')){
                 board.text = result.toString() + "x"
@@ -228,7 +248,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         numDiv.setOnClickListener {
-            if(board.text.isEmpty()){
+            if(board.text.isEmpty() || board.text.toString() == "Khong the chia cho 0"){
                 board.text = board.text.toString() + "0/"
             }else if (board.text.contains('=')){
                 board.text = result.toString() + "/"
@@ -238,7 +258,12 @@ class MainActivity : AppCompatActivity() {
         }
 
         numR.setOnClickListener {
-            if(board.text.last().isDigit()) {
+            if(board.text.last().isDigit() || board.text.toString() != "Khong the chia cho 0") {
+                if(board.text.toString().contains("/0")){
+                    board.text = "Khong the chia cho 0"
+                    return@setOnClickListener
+                }
+
                 expOld = board.text.toString() + "="
                 changePostFix(board.text.toString())
                 Log.d("TESSw", calQueue.toString())
