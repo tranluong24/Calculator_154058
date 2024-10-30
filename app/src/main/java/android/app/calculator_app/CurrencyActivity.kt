@@ -89,9 +89,9 @@ class CurrencyActivity : AppCompatActivity() {
 
                         val result = (donviSrc * value_src) / donvi_Des
 
-                        edt_1.removeTextChangedListener(this) // Gỡ bỏ listener để tránh vòng lặp vô tận
+//                        edt_1.removeTextChangedListener(this) // Gỡ bỏ listener để tránh vòng lặp vô tận
                         edt_2.setText(String.format("%.2f", result))
-                        edt_1.addTextChangedListener(this)
+//                        edt_1.addTextChangedListener(this)
                     }
                 }
                 else if(id == R.id.edtDes){
@@ -102,9 +102,9 @@ class CurrencyActivity : AppCompatActivity() {
 
                         val result = (donviSrc * value_src) / donvi_Des
 
-                        edt_2.removeTextChangedListener(this) // Gỡ bỏ listener để tránh vòng lặp vô tận
+//                        edt_2.removeTextChangedListener(this) // Gỡ bỏ listener để tránh vòng lặp vô tận
                         edt_1.setText(String.format("%.2f", result))
-                        edt_2.addTextChangedListener(this) // Thêm lại listener
+//                        edt_2.addTextChangedListener(this) // Thêm lại listener
                     }
                 }
             }
